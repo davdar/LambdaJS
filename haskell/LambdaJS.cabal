@@ -28,30 +28,32 @@ Library
   Extensions:     
     DeriveDataTypeable Rank2Types FlexibleInstances
   Exposed-Modules:
-    Language.LambdaJS.Desugar
-    Language.LambdaJS.ECMAEnvironment
-    Language.LambdaJS.DesugarWith
-    Language.LambdaJS.LiftFuncStmts
-    Language.LambdaJS.PrettyPrint
-    Language.LambdaJS.LocalVars
-    Language.LambdaJS.Syntax
-    Language.LambdaJS.RemoveHOAS
+    Language.LambdaJS
     Language.LambdaJS.AssignableVars
-  Other-Modules:
+    Language.LambdaJS.Desugar
+    Language.LambdaJS.DesugarWith
+    Language.LambdaJS.ECMAEnvironment
+    Language.LambdaJS.Lexer
+    Language.LambdaJS.LiftFuncStmts
+    Language.LambdaJS.LocalVars
+    Language.LambdaJS.Parser
     Language.LambdaJS.Prelude
+    Language.LambdaJS.PrettyPrint
+    Language.LambdaJS.RemoveHOAS
+    Language.LambdaJS.Syntax
 
-Executable lambdaJS
-  Main-Is: LambdaJS.hs
-  Hs-Source-Dirs: src
-  Build-Depends:
-    base >= 4 && < 5,
-    mtl >= 1.1.0.1,
-    parsec >= 3.0.0,
-    pretty >= 0.1, 
-    containers >= 0.1,
-    syb >= 0.1,
-    language-ecmascript
-  ghc-options:
-    -fwarn-incomplete-patterns -rtsopts
-  Extensions:     
-    DeriveDataTypeable Rank2Types FlexibleInstances
+-- Executable lambdaJS
+--   Main-Is: LambdaJS.hs
+--   Hs-Source-Dirs: src
+--   Build-Depends:
+--     base >= 4 && < 5,
+--     mtl >= 1.1.0.1,
+--     parsec >= 3.0.0,
+--     pretty >= 0.1, 
+--     containers >= 0.1,
+--     syb >= 0.1,
+--     language-ecmascript
+--   ghc-options:
+--     -fwarn-incomplete-patterns -rtsopts
+--   Extensions:     
+--     DeriveDataTypeable Rank2Types FlexibleInstances
